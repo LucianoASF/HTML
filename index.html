@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h3>--PortFolio--</h3>
+        <ul>
+            <a href="">
+                <li>Inicio</li>
+            </a>
+            <a href="#sobre">
+                <li>Sobre</li>
+            </a>
+            <a href="#trabalho">
+                <li>Trabalho</li>
+            </a>
+            <a href="#contato">
+                <li>Contato</li>
+            </a>
+        </ul>
+        <div id="pw">
+            <p id='cor' onclick="MudarCor()">White Mode</p>
+            <a href="" id='normal'><p>Normal Mode</p></a>
+        </div>
+    </nav>
+
+    <section id="inicial">
+        <h2>Olá, meu nome é</h2>
+        <h1 id="maior">Luciano</h1>
+    </section>
+    <section id="sobre">
+        <h2 class="Titulos">Quem eu sou</h2>
+        <p class="texto">Meu nome é Luciano, tenho 19 anos e sou estudante de Sistemas de Informação no IFNMG Campus
+            Pirapora</p>
+    </section>
+    <section id="trabalho">
+
+        <h2 class="Titulos">Trabalho</h2>
+        <div class="teste1">
+            <div class="teste">
+
+                <figure>
+                    <img src="imagens/em breve.jpg">
+                    <figcaption>Em breve</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/ifnmg_vertical_jpg.jpg">
+                    <figcaption>Segunda Chamada</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/em breve.jpg">
+                    <figcaption>Em breve</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <h2 class="Titulos">Contato</h2>
+        <div class="container-contato">
+            <form method="post">
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <br>
+                <input type="text" id="telefone" name="telefone" placeholder="Telefone" required>
+                <br>
+                <textarea name="mensagem" cols="32" rows="10" placeholder="Mensagem"></textarea>
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div id="redes">
+            <a href="https://www.linkedin.com/in/luciano-augusto-de-souza-filho-664080244/" target="_blank"> <img
+                    src="imagens/linkedin.svg"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.svg"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="imagens/github.svg"></a>
+        </div>
+        <p>©Todos os direitos reservados</p>
+    </footer>
+    <script>
+        navi = document.getElementsByTagName("nav")[0];
+        foot = document.getElementsByTagName("footer")[0];
+        contato = document.getElementById("contato");
+        inicial = document.getElementById("inicial");
+        sobre = document.getElementById("sobre");
+        trabalho = document.getElementById("trabalho");
+        body = document.getElementsByTagName("body")[0];
+        p = document.getElementById("cor");
+        pnormal = document.getElementById("normal");
+        function MudarCor(){
+            navi.style.background = "white";
+            foot.style.background = "white";
+            contato.style.background = "white";
+            inicial.style.background = "white";
+            sobre.style.background = "white";
+            trabalho.style.background = "white";
+            body.style.color = "#94f9bf";
+            p.style.display = 'none';
+            pnormal.style.display = 'block';
+
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: #420b58;
+    position: fixed;
+
+
+}
+
+h3 {
+    color: #17f9ff;
+    margin-left: 1vw;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+#pw{
+    display: flex;
+    width: 70vw;
+    flex-direction: row-reverse;
+    color: #94f9bf;
+    
+
+}
+#pw p:hover{
+    cursor: pointer;
+}
+#normal{
+    display:none;
+}
+
+
+ul li {
+    padding: 10px;
+}
+
+#inicial {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: orangered;
+    color: #94f9bf;
+
+
+
+}
+
+#maior {
+    font-size: 10vh;
+}
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 55vh;
+    background-color: #00b4fc;
+
+}
+
+.texto {
+    padding-top: 1vh;
+}
+
+.Titulos {
+    font-size: 5vh;
+}
+
+#trabalho {
+    text-align: center;
+    background-color: orangered;
+    width: 100vw;
+    height: 55vh;
+
+}
+
+#contato {
+    text-align: center;
+    background-color: #00b4fc;
+    width: 100vw;
+    height: 55vh;
+
+}
+
+.btn {
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.teste {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 45vh;
+    width: 80vw;
+    
+}
+.teste1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 30vh;
+    width: 15vw;
+    border-radius: 5vh;
+    
+}
+figure{
+    width: 17vw;
+    
+
+}
+figure:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #94f9bf;
+}
+.container-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    
+}
+input{
+    width: 15vw;
+    margin-bottom: 1vh;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10vh;
+    background-color:  #420b58;
+    color: #94f9bf;
+}
+footer img{
+    height: 3vh;
+    width: 3vw;
+    
+}
+footer img:hover{
+    filter: invert(100%);
+}
