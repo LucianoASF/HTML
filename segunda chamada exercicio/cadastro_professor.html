@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <meta charset="UTF-8">
+        <title>Cadastro de Professor</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html"><img src="imagens/ifnmg_vertical_jpg.jpg"></a>
+                <div class="menu">
+                    <ul>
+                        <li><a class="login" href="login.html">Login</a></li>      
+                        <li><a id="cad_aluno" href="cadastro_aluno.html">Cadastro Aluno</a></li>      
+                        <li><a class="requerimentos" href="requerimento.html">Requerimentos</a></li>                    
+                        <li><a class="professor" href="professor.html">Área do Professor</a></li>                                                         
+                        <li><a class="coordenador" href="coordenador.html">Área do Coordenador</a></li>                                                         
+                    </ul> 
+                </div>          
+           </header> 
+           <div class="container">
+                <h1 id="h1_form_prof">Cadastro Professor:</h1>
+                <form id="form_prof" method="post" action="login.html">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="abreviacao">Abreviação</label>
+                    <input type="text" name="abreviacao" id="abreviacao" required>
+                    <label for="telefone">Telefone:</label>
+                    <input type="number" name="telefone" id="telefone" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" required>
+                    <br>
+                    <br>
+                    <input type="submit">
+                    <br>
+                    <a href="login.html">Já tenho cadastro</a>
+                
+                </form>
+            </div>
+    </body>
+</html>

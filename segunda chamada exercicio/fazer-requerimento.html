@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Requerimento</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="imagens/ifnmg_vertical_jpg.jpg"></a>
+            <div class="menu">
+                <ul>
+                    <li><a class="login" href="login.html">Login</a></li>      
+                    <li><a class="cadastro" href="cadastro.html">Cadastro</a></li>
+                    <li><a id="ver_reque_nav" href="seus_requerimentos.html">Ver Requerimentos</a></li>                    
+                    <li><a class="professor" href="professor.html">Área do Professor</a></li>                                                         
+                    <li><a class="coordenador" href="coordenador.html">Área do Coordenador</a></li>                                                         
+                </ul> 
+            </div>          
+        </nav>
+    </header>
+    <div class="container">
+        <form id="form_fazer_requerimento" action="#" method="post">
+            <label for="curso">Curso:</label>
+            <br>
+            <input type="text" name="curso" id="curso" required>
+            <br>
+            <label for="turma">Turma:</label>
+            <br>
+            <input type="text" name="turma" id="turma" required>
+            <label for="disciplina">Disciplina:</label>
+            <input type="text" name="disciplina" id="disciplina" required>
+            <br>
+            <label for="data">Data da avaliação perdida:</label>
+            <br>
+            <input type="date" name="data" id="data" required>
+            <br>
+            <br>
+            <label id="file" for="arquivo">Enviar Arquivo</label>
+            <br>
+            <br>
+            <input type="file" name="arquivo" id="arquivo" required>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
