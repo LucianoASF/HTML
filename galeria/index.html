@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Galeria</title>
+        <style>
+            body{
+                margin: 0;
+            }
+            img{
+                width: 200px;
+                height: 200px;
+                margin: 30px;
+                border: 1px solid black;
+            }
+            div#conteiner{
+                height: 100vh;
+                width: 100vw;
+                background-color: rgba(0, 0, 0, .7);
+                display: none;
+                
+            }
+            #box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            div.seta{
+                width: 20px;
+                height: 20px;
+                border: 4px solid black;
+                border-top-color: rgba(0, 0, 0, .0);
+                border-right-color: rgba(0, 0, 0, .0);               
+                
+            }
+            .esquerda{
+                transform: rotate(45deg);
+            }
+            .direita{
+                transform: rotate(-135deg)
+            }
+            #zoom{
+                width: 700px;
+                height: 500px;
+            }
+            section{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <img style='margin-left:110px;' src="imagens/img1.jpg"  onclick="Zoom1();">
+            <img src="imagens/img2.jpg"  onclick="Zoom2();">
+            <img src="imagens/img3.jpg"  onclick="Zoom3();">
+            <img src="imagens/img4.jpg"  onclick="Zoom4();">
+            <img src="imagens/img5.jpg"  onclick="Zoom5();">
+            <img style='margin-left:110px;' src="imagens/img6.jpg"  onclick="Zoom6();">
+            <img src="imagens/img7.jpg"  onclick="Zoom7();">
+            <img src="imagens/img8.jpg"  onclick="Zoom8();">
+            <img src="imagens/img9.jpg"  onclick="Zoom9();">
+            <img src="imagens/img10.jpg" onclick="Zoom10();">
+        </section>
+
+        <div id="conteiner">
+            <div id="box">
+                <div class="seta esquerda" onclick="anterior();"></div>         
+                <img id="zoom" src="imagens/img1.jpg" onmousedown="Voltar();">  
+                <div class="seta direita" onclick="proxima();"></div>         
+            </div>
+            
+        </div>
+        <script>
+            var a = document.getElementsByTagName("div")[0];
+            var b = document.getElementsByTagName("section")[0];
+            var im = document.getElementById("zoom");
+            var isrc;
+            function Zoom1(){   
+                im.setAttribute("src", "imagens/img1.jpg");
+                a.style.display = 'block';
+                b.style.display = 'none';
+                isrc = 1;
+            }
+            function Zoom2(){
+                im.setAttribute("src", "imagens/img2.jpg");
+                a.style.display = 'block';
+                b.style.display = 'none';
+                isrc = 2;
+            }
+            function Zoom3(){
+                im.setAttribute("src", "imagens/img3.jpg");
+                a.style.display = 'block';
+                b.style.display = 'none';
+                isrc = 3;
+            }
+            function Zoom4(){
+                im.setAttribute("src", "imagens/img4.jpg");
+                a.style.display = 'block';
+                b.style.display = 'none';
+                isrc = 4;
+            }
+            function Zoom5(){
+                im.setAttribute("src", "imagens/img5.jpg");
+                a.style.display = 'block';
+                b.style.display = 'none';
+                isrc = 5;
+            }
+            function Zoom6(){
+                im.setAttribute("src", "imagens/img6.jpg");
+                a.style.display = 'block';
+                b.style.display = 'none';
+                isrc = 6;
+            }
+            function Zoom7(){
+                im.setAttribute("src", "imagens/img7.jpg");
+                a.style.display = 'block';
+                b.style.display = 'none';
+                isrc = 7;
+            }
+            function Zoom8(){
+                im.setAttribute("src", "imagens/img8.jpg");
+                a.style.display = 'block';
+                b.style.display = 'none';
+                isrc = 8;
+            }
+            function Zoom9(){
+                im.setAttribute("src", "imagens/img9.jpg");
+                a.style.display = 'block';
+                b.style.display = 'none';
+                isrc = 9;
+            }
+            function Zoom10(){
+                a.style.display = 'block';
+                im.setAttribute("src", "imagens/img10.jpg");
+                b.style.display = 'none';
+                isrc = 10;
+            }
+            function Voltar(){
+                a.style.display = 'none';
+                b.style.display = 'block';
+            }
+            function proxima(){
+                if (isrc <10){
+                    isrc++;
+                }
+                else{
+                    isrc = 1;
+                }
+                im.setAttribute("src", "imagens/img"+isrc+".jpg");
+            }
+            function anterior(){
+                if (isrc >1){
+                    isrc--;
+                }
+                else{
+                    isrc = 10;
+                }
+                im.setAttribute("src", "imagens/img"+isrc+".jpg");
+                
+            }
+        </script>
+    </body>
+</html>
