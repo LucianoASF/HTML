@@ -1,0 +1,294 @@
+@font-face{
+	font-family: Garet;
+	src: url(fontes/Garet-Book.ttf)
+}
+
+@font-face{
+	font-family: Garet_Heavy;
+	src: url(fontes/Garet-Heavy.ttf)
+}
+
+body{
+	background-color: #0B0D0F;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+/*HEADER (logo + barra de nav)*/
+
+header{
+	position: relative;
+}
+
+#cab{
+	color: #DBBD9A;
+	text-align: center;
+	margin: none;
+	height: 200px;
+	background-color: #172C42;
+	padding: 10px 0 10px 0;
+}
+
+header img{
+	margin: 10px auto 0;
+	border: none;
+	height: 180px;
+	width: 281px;
+}
+
+nav{
+	text-align: center;
+	background-color: #423722;
+}
+
+nav a{
+	font-family: Garet_Heavy;
+	color: #DBBD9A;
+	text-decoration: none;
+	padding: 0 30px 0 30px;
+	font-size: 30px;
+	line-height: 100px;
+	height: 100px;
+}
+
+/*CONTEÚDO (GERAL)*/
+
+section p, #listas, .posicao_img{
+	padding: 0 18% 0 18%;
+	text-align: justify;
+}
+
+.primeiro_parag{
+	padding-top: 20px;
+}
+
+p, a, li{
+	font-family: Garet;
+	color: #DBBD9A;
+	font-size: 18px;
+	text-decoration: none;
+}
+	
+section img{
+	width: 55%;
+	border: 2px solid #172C42;
+}
+
+.posicao_img{
+	text-align: center;
+}
+
+a:hover{
+	color: white;
+}
+
+p a{
+	color: #b57331;
+}
+
+/*BARRA LATERAL*/
+
+aside{
+	background-color: #b57331;
+	border-radius: 15px 0 0 15px;
+	position: sticky;
+  	top: 20%;
+  	margin-top: 2%;
+  	float: right;
+	width: 16%;
+	text-align: center;
+	padding: 35px 0 35px 0;
+}
+
+h6{
+	font-size: 28px;
+	font-family: Garet_Heavy;
+	margin: 0;
+	width: 100%;
+}
+
+#sohj{
+	color: #172C42;
+}
+
+#promocao:hover #sohj{
+	color: #DBBD9A;
+}
+
+#desconto{
+	color: #DBBD9A;
+}
+
+#promocao:hover #desconto{
+	color: #172C42;
+}
+
+#clique{
+	color: #172C42;
+}
+
+#promocao:hover #clique{
+	color: #DBBD9A;
+}
+
+/*FOOTER*/
+
+footer{
+	margin-top: 30px;
+}
+
+footer p{
+	padding: 0 18% 0 18%;
+}
+
+.redes{
+	background-color: #172C42;
+	text-align: center;
+	vertical-align: middle;
+	padding: 20px 10% 50px 10%;
+	margin-bottom: 20px;
+}
+
+.icone_redes{
+	height: 60px;
+	padding: 0 25px 0 25px;
+	border: 0;
+}
+
+.icone_redes:hover{
+	filter: invert(100%);
+}
+
+.copyright{
+	background-color: #172C42;
+	margin: auto;
+	font-size: 15px;
+	padding: 25px 18% 25px 18%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*PÁGINA INICIAL*/
+
+li{
+	list-style-type: circle;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+ul p{
+	font-family: Garet_Heavy;
+	padding: 0 0 0 30%;
+}
+
+#listas{
+	text-align: center;
+}
+
+#lista1, #lista2{
+	background-color: #172C42;
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 350px;
+	padding: 2%;
+	margin: 0 3px 10px 3px;
+	border-radius: 15px;
+}
+
+video{
+	width: 64%;
+	display: block;
+	margin: auto;
+}
+
+/*COMPRE O CURSO*/
+
+#box{
+	width: 450px;
+	height: 500px;
+	border-radius: 20%;
+	background-color: #423722;
+	position: fixed;
+	z-index: 2;
+	margin-top: -200px;
+
+}
+
+#font{ 
+	font-family: Garet;
+	color: #DBBD9A;
+	font-size: 20px;
+	text-align: center;
+	position: fixed;
+	z-index: 3;
+	margin-top: -200px;
+	margin-left: 2%;
+
+}
+
+input{
+	border-radius: 10px;
+	border:none;
+	color:#DBBD9A;
+	background-color:#0b0d0f ;
+
+}
+
+#cab2{
+	color: #DBBD9A;
+	font-family: Austein;
+	font-size: 35px;
+	text-align: center;
+	padding-top:10px;
+}
+
+#but{ 
+	background-color: #DBBD9A;
+	color: #0b0d0f;
+	width: 200px;
+	height: 100px;
+	border-radius: 25px;
+	border: none;
+	position: relative;
+	font-size: 30px;
+	margin: 0 auto 0;
+}
+
+#sec{ 
+	width: 200px;
+	height: 100px;
+	margin: 0 auto 0;
+}
+
+#pop{ 
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 300px;
+	left: 35%;
+}
+
+#p{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+
+/*DEPOIMENTOS*/
+
+.pessoas{
+  color: #DBBD9A;
+}
+
+section figure{
+  text-align: center;
+}
+
+section figure img{
+  height: 300px;
+  width: 450px;
+  margin-top: -20px;
+  border: 2px solid #172C42;
+  margin-top:50px;
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Compre o curso</title>
+        <link rel="stylesheet"  type="text/css" href="cafe.css">
+        <script lenguage=javascript type=" text/javascript">
+            function pop(){
+                document.getElementById("pop").style.display= "block";
+                document.getElementById("but").style.display= "none";
+                document.getElementById("corp").style.opacity="0.3";
+            }
+            function popexit(){
+                document.getElementById("pop").style.display= "none";
+                document.getElementById("but").style.display= "block";
+                document.getElementById("corp").style.opacity="1";
+
+            }
+        </script>
+    </head>
+    <body>
+    <header>
+        <div id="cab">
+            <img src="imagens/cafe.png">
+        </div>
+        <nav>
+            <a href="cafe.html">Página Inicial</a>
+            <a href="depoimentos.html">Depoimentos</a>
+        </nav>
+    </header>	
+
+        <div id="pop">
+            <div id="box">
+            </div>
+            <section id="font" >
+                    <h1 id="cab2">Compre o curso</h1>
+                    Nome: <br>
+                    <input type="text" size="45" autofocus > <br>
+                    CPF: <br> <input type="text" size="45"  ><br>
+                    RG: <br> <input type="text" size="45"  ><br>
+                    Email: <br><input type="text" size="45" > <br>
+                    Forma de pagamento:<br>
+                        <select style="background-color:#0b0d0f ; color: #DBBD9A;" > 
+                                <option> Selecione...</option>
+                                <option>Cartão</option>
+                                <option>Pix</option>
+                                <option>Boleto bancario</option>
+                            
+                        </select><br>
+                    <input type="checkbox"> Li e concordo com todos os termos. <br>
+                    <input type="button" value="Comprar" style="color:rgb(255, 255, 255);" onclick="javascript: popexit()"> 
+    
+
+        </div>
+        <section id="corp">
+            <p class="primeiro_parag">O Curso de Barista do Coffe Web é essencial para quem deseja entrar no mercado de trabalho do café ou apenas aprecia um bom café e deseja entender desde a variedade de grãos até métodos de preparo.</p>
+
+            <P>As aulas do curso são 80% práticas, qualificando o profissional a trabalhar em cafeterias, restaurantes, bares, hotéis, eventos ou até mesmo montar uma cafeteria.</P>
+
+            <p>Pelo fato do café ser a segunda bebida mais consumida no mundo, o Coffe Web criou o curso de barista e foi um dos pioneiros no treinamento online de baristas no Brasil.</P>
+
+            <P>O Coffe Web entende que a formação de barista é o ponto inicial para quem deseja montar uma cafeteria, pois além de passar por toda história do café, métodos de preparo, blend e torra, ainda explica sobre marketing pessoal do barista e elaboração de coquetéis com café.</P>
+
+            <p>Para quem quer trabalhar em uma cafeteria: O curso oferece conhecimentos práticos e teóricos sobre o café e o preparo de cafés especiais, como espresso e outros derivados dele. Durante o curso de barista o aluno vivencia a experiência real de um atendente com atuação prática e professores especialistas do setor de formação de baristas.</p>
+
+            <p>Para quem quer montar uma cafeteria: O curso abrange um conteúdo desde história do café até conhecimentos mais práticos, por meio de exemplos reais da profissão. Ainda há o aprendizado da utilização de máquinas profissionais para preparo do café e utensílios de mercado por instrutores experientes do setor.</p>
+
+            <p>Para que é apaixonado por café: O espresso (de grafia italiana com “s”) ou café expresso não é somente um café preparado mais rapidamente. Pelo contrário, esses cafés são preparados com água quente e grãos de café moíds em uma máquina especial para o café espresso. Durante o curso, os apreciadores de café aprendem sobre métodos de preparo de café e ainda fazem drinks com café quentes e frios.</p>
+
+            <p id="p">Adquira já seu curso por apenas R$299,99!</p>
+        </section>
+        <section id="sec">
+            <input id="but" type="button" value="Comprar!" onclick="javascript:pop()"> 
+        </section>
+
+        <footer>
+            <div class="redes">
+                <p>Quer entrar em contato conosco ou ficar por dentro das novidades?<br>Confira nossas redes sociais:<br><br></p>
+                <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank"><img src="imagens/whatsapp.png" class="icone_redes"></a>
+                <a href="https://pt-br.facebook.com" target="_blank"><img src="imagens/facebook.png" class="icone_redes"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="imagens/instagram.png" class="icone_redes"></a>
+                <a href="https://www.tiktok.com/pt-BR/" target="_blank"><img src="imagens/tiktok.png" class="icone_redes"></a>
+                <a href="https://twitter.com" target="_blank"><img src="imagens/twitter.png" class="icone_redes"></a>
+            </div>
+
+            <p class="copyright">© Coffe Web 2022 | Todos os direitos reservados</p>
+        </footer>
+
+    </body>
+</html>
